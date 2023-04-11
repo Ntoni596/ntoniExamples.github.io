@@ -1,0 +1,187 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+  margin: auto;
+
+}
+.button {
+  color: yellow;
+  font-family: verdana;
+  width: 500px;
+  height: 60px;
+  padding: 15px;
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  transition: .5s;
+  font-weight: 50;
+  font-size: 50px;
+  font-family: 'comic sans ms';
+  
+}
+
+.button:after {
+  content: '';
+  width: 0px;
+  height: 120%;
+  position: absolute;
+  left: -10%;
+  bottom: 0;
+  background-color: yellow;
+  transform: skewX(15deg);
+  z-index: -1;
+  transition: .6s;
+  font-weight: 1000;
+  display:block;
+  text-align:center;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.button:hover:after {
+  left: -10%;
+  width: 120%;
+}
+.button2 {
+  color: yellow;
+  font-family: verdana;
+  width: 210px;
+  height: 35px;
+  padding: 15px;
+  text-align: center;
+  position: absolute;
+  top: 1.9%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  transition: .5s;
+  font-weight: 50;
+  font-size: 30px;
+  font-family: 'comic sans ms';
+  
+}
+
+.button2:after {
+  content: '';
+  width: 0px;
+  height: 120%;
+  position: absolute;
+  left: -10%;
+  bottom: 0;
+  background-color: yellow;
+  transform: skewX(15deg);
+  z-index: -1;
+  transition: .5s;
+  font-weight: 1000;
+  display:block;
+  text-align:center;
+}
+
+.button2:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.button2:hover:after {
+  left: -10%;
+  width: 120%;
+}
+.button3 {
+  color: yellow;
+  font-family: verdana;
+  width: 600px;
+  height: 60px;
+  padding: 15px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  transition: .5s;
+  font-weight: 50;
+  font-size: 50px;
+  font-family: 'comic sans ms';
+  
+}
+
+.button3:after {
+  content: '';
+  width: 0px;
+  height: 120%;
+  position: absolute;
+  left: -10%;
+  bottom: 0;
+  background-color: yellow;
+  transform: skewX(15deg);
+  z-index: -1;
+  transition: .6s;
+  font-weight: 1000;
+  display:block;
+  text-align:center;
+}
+
+.button3:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.button3:hover:after {
+  left: -10%;
+  width: 120%;
+}
+.button4 {
+  color: yellow;
+  font-family: verdana;
+  width: 600px;
+  height: 60px;
+  padding: 15px;
+  text-align: center;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  transition: .5s;
+  font-weight: 50;
+  font-size: 50px;
+  font-family: 'comic sans ms';
+  
+}
+
+.button4:after {
+  content: '';
+  width: 0px;
+  height: 120%;
+  position: absolute;
+  left: -10%;
+  bottom: 0;
+  background-color: yellow;
+  transform: skewX(15deg);
+  z-index: -1;
+  transition: .6s;
+  font-weight: 1000;
+  display:block;
+  text-align:center;
+}
+
+.button4:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.button4:hover:after {
+  left: -10%;
+  width: 120%;
+}
