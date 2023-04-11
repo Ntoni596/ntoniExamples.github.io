@@ -1,0 +1,20 @@
+@font-face{
+    font-family: proxima;
+    src: url(../../fonts/ProximaNovaThin.otf)
+}
+@font-face{
+    font-family: proxima;
+    src: url(../../fonts/ProximaNovaBold.otf);
+    font-weight: bold;
+}
+
+$mainFont: proxima;
+
+$smallBodyMobile: 12px;
+$mediumBodyMobile: 14.2px;
+
+$xlargeHeading: 55px;
+$largeHeading: 30px;
+
+$smallBodyTablet: 16px;
+$mediumBodyTablet: 19px;

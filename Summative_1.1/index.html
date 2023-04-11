@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Your Order</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="CSS/main.min.css">
+</head>
+<div id="navigationBox">
+    <div class="overlay overlay-slide-left" id="overlay">
+      <nav>
+          <ul>
+            <div class="swiper-container ">
+                <div id="close">
+                    <div id="close1" class="close-bar-1"></div>
+                    <div id="close2" class="close-bar-2"></div>
+                </div>
+
+                <div id="orderWrapper" class="swiper-wrapper">
+                    <div id="OrderMenu">
+                        <h1>Order</h1>
+                    </div>
+                    <div id="nav-1" class="swiper-slide grid-container slide-out-1 hidden">
+                        <img class="menu-item-img" src="IMGS/starter-springroll.jpg">
+                        <p class="item-heading">Deep Fried Spring Rolls - GF</p>
+                        <p class="item-description"> Crispy deep fried spring rolls stuffed with high quality Chicken, Prawns, Vermicelli, Penuts and Namjum</p>
+                        <p class="item-price">19</p>
+                        <button class="item-add">Check Status</button>
+                    </div> 
+                    <div id="nav-2" class="swiper-slide grid-container slide-out-2 hidden">
+                        <img class="menu-item-img" src="IMGS/dessert.jpeg">
+                        <p class="item-heading">Tripple Churned Ice Cream</p>
+                        <p class="item-description">House made vanila and chocolate ice cream served ontop of a fresh berry compote drizzled with creamy milk chocolate.</p>
+                        <p class="item-price">11</p>
+                        <button class="item-add">Check Status</button>
+                    </div>
+                    <div id="nav-3" class="swiper-slide grid-container slide-out-3 hidden">
+                        <img class="menu-item-img" src="IMGS/costal-lamb-bigplate.jpg">
+                        <p class="item-heading">Grilled Costal Spring Lamb Cutlets</p>
+                        <p class="item-description">Gilled Lamb served with a fresh basil pesto, honey and sesonal vegetables cooked to your liking.</p>
+                        <p class="item-price">41</p>
+                        <button class="item-add">Check Status</button>
+                    </div>
+                    <div id="nav-4" class="swiper-slide grid-container slide-out-4 hidden">
+                    <img class="menu-item-img" src="IMGS/drink.jpg">
+                    <p class="item-heading">Higher Ground Cocktail</p>
+                    <p class="item-description">The perfect cocktail creation, made with Bourbon that has a hint of pepermint, Sherry, Amaro, Cherry Liqueur, Maple Syrup and black wallnut bitters. </p>
+                    <p class="item-price">13</p>
+                    <button class="item-add">Add To Order</button>
+                    </div>
+                </div>
+            </div>
+            <h3> Confirm Order </h3>
+          </ul>
+      </nav>
+    </div>
+  </div>
+</div> 
+
+<body>
+    <div id="load">
+        <img src="IMGS/logo.png">
+        <div>
+        <button id="start" class="btn draw-border">Start Enjoying</button>
+        </div>
+    </div>
+    <section class= "grid-container" id="header-content">
+        <div class="grid-item" id="call-for-help">
+            <a href="#image1" class="show-image"><img id="help" src="IMGS/help.png" /></a>
+            <div class="lightbox short-animate" id="image1">
+                <img class="long-animate" src="IMGS/lightbox.jpg" />
+            </div>
+            <div id="close-button" class="short-animate">
+                <a id="close-lightbox" class="long-animate" href="#!">Close Lightbox</a>
+            </div>
+        </div>
+        <div class="grid-item" id="logo">
+            <img id="logo" src="IMGS/logo.png">
+        </div>
+        <div class="grid-item" id="view-cart">
+            <img id="cart" src="IMGS/cart.png">
+
+        </div>
+    </section>
+    <section id="headers">
+        <div id="main-header">
+            <h1 id="pageHeading">Small Plates</h1>
+        </div>
+    </section>
+
+    <section id="main-content">
+        <div id="smallplates" class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide grid-container">
+                    <img class="menu-item-img" src="IMGS/starter-springroll.jpg">
+                    <p class="item-heading">Deep Fried Spring Rolls - GF</p>
+                    <p class="item-description"> Crispy deep fried spring rolls stuffed with high quality Chicken, Prawns, Vermicelli, Penuts and Namjum</p>
+                    <p class="item-price">19</p>
+                    <button id="addSmall" class="item-add">Add To Order</button>
+                </div>
+                <div class="swiper-slide grid-container">
+                    <img class="menu-item-img" src="IMGS/starter-springroll.jpg">
+                    <p class="item-heading">Deep Fried Spring Rolls - GF</p>
+                    <p class="item-description"> Crispy deep fried spring rolls stuffed with high quality Chicken, Prawns, Vermicelli, Penuts and Namjum</p>
+                    <p class="item-price">19</p>
+                    <button id="addSmall" class="item-add">Add To Order</button>
+                </div>
+                <div class="swiper-slide grid-container">
+                    <img class="menu-item-img" src="IMGS/starter-springroll.jpg">
+                    <p class="item-heading">Deep Fried Spring Rolls - GF</p>
+                    <p class="item-description"> Crispy deep fried spring rolls stuffed with high quality Chicken, Prawns, Vermicelli, Penuts and Namjum</p>
+                    <p class="item-price">19</p>
+                    <button id="addSmall" class="item-add">Add To Order</button>
+                </div>
+                <div class="swiper-slide grid-container">
+                    <img class="menu-item-img" src="IMGS/starter-springroll.jpg">
+                    <p class="item-heading">Deep Fried Spring Rolls - GF</p>
+                    <p class="item-description"> Crispy deep fried spring rolls stuffed with high quality Chicken, Prawns, Vermicelli, Penuts and Namjum</p>
+                    <p class="item-price">19</p>
+                    <button id="addSmall" class="item-add">Add To Order</button>
+                </div>
+                <div class="swiper-slide grid-container">
+                    <img class="menu-item-img" src="IMGS/starter-springroll.jpg">
+                    <p class="item-heading">Deep Fried Spring Rolls - GF</p>
+                    <p class="item-description"> Crispy deep fried spring rolls stuffed with high quality Chicken, Prawns, Vermicelli, Penuts and Namjum</p>
+                    <p class="item-price">19</p>
+                    <button id="addSmall" class="item-add">Add To Order</button>
+                </div>
+                <div class="swiper-slide grid-container">
+                    <img class="menu-item-img" src="IMGS/starter-springroll.jpg">
+                    <p class="item-heading">Deep Fried Spring Rolls - GF</p>
+                    <p class="item-description"> Crispy deep fried spring rolls stuffed with high quality Chicken, Prawns, Vermicelli, Penuts and Namjum</p>
+                    <p class="item-price">19</p>
+                    <button id="addSmall" class="item-add">Add To Order</button>
+                </div>
+                <div class="swiper-slide grid-container">
+                    <img class="menu-item-img" src="IMGS/starter-springroll.jpg">
+                    <p class="item-heading">Deep Fried Spring Rolls - GF</p>
+                    <p class="item-description"> Crispy deep fried spring rolls stuffed with high quality Chicken, Prawns, Vermicelli, Penuts and Namjum</p>
+                    <p class="item-price">19</p>
+                    <button id="addSmall" class="item-add">Add To Order</button>
+                </div>
+                <div class="swiper-slide grid-container">
+                    <img class="menu-item-img" src="IMGS/starter-springroll.jpg">
+                    <p class="item-heading">Deep Fried Spring Rolls - GF</p>
+                    <p class="item-description"> Crispy deep fried spring rolls stuffed with high quality Chicken, Prawns, Vermicelli, Penuts and Namjum</p>
+                    <p class="item-price">19</p>
+                    <button id="addSmall" class="item-add">Add To Order</button>
+                </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+        <div id="bigplates" class="swiper-container">
+            <div  class="swiper-wrapper">
+                <div class="swiper-slide grid-container">
+                    <img class="menu-item-img" src="IMGS/costal-lamb-bigplate.jpg">
+                    <p class="item-heading">Grilled Costal Spring Lamb Cutlets</p>
+                    <p class="item-description">Gilled Lamb served with a fresh basil pesto, honey and sesonal vegetables cooked to your liking.</p>
+                    <p class="item-price">41</p>
+                    <button id="addBig" class="item-add">Add To Order</button>
+                </div>
+                <div class="swiper-slide grid-container">
+                    <img class="menu-item-img" src="IMGS/costal-lamb-bigplate.jpg">
+                    <p class="item-heading">Grilled Costal Spring Lamb Cutlets</p>
+                    <p class="item-description">Gilled Lamb served with a fresh basil pesto, honey and sesonal vegetables cooked to your liking.</p>
+                    <p class="item-price">41</p>
+                    <button id="addBig" class="item-add">Add To Order</button>
+                </div>
+                <div class="swiper-slide grid-container">
+                    <img class="menu-item-img" src="IMGS/costal-lamb-bigplate.jpg">
+                    <p class="item-heading">Grilled Costal Spring Lamb Cutlets</p>
+                    <p class="item-description">Gilled Lamb served with a fresh basil pesto, honey and sesonal vegetables cooked to your liking.</p>
+                    <p class="item-price">41</p>
+                    <button id="addBig" class="item-add">Add To Order</button>
+                </div>
+                <div class="swiper-slide grid-container">
+                    <img class="menu-item-img" src="IMGS/costal-lamb-bigplate.jpg">
+                    <p class="item-heading">Grilled Costal Spring Lamb Cutlets</p>
+                    <p class="item-description">Gilled Lamb served with a fresh basil pesto, honey and sesonal vegetables cooked to your liking.</p>
+                    <p class="item-price">41</p>
+                    <button id="addBig" class="item-add">Add To Order</button>
+                </div>
+                <div class="swiper-slide grid-container">
+                    <img class="menu-item-img" src="IMGS/costal-lamb-bigplate.jpg">
+                    <p class="item-heading">Grilled Costal Spring Lamb Cutlets</p>
+                    <p class="item-description">Gilled Lamb served with a fresh basil pesto, honey and sesonal vegetables cooked to your liking.</p>
+                    <p class="item-price">41</p>
+                    <button id="addBig" class="item-add">Add To Order</button>
+                </div>
+                <div class="swiper-slide grid-container">
+                    <img class="menu-item-img" src="IMGS/costal-lamb-bigplate.jpg">
+                    <p class="item-heading">Grilled Costal Spring Lamb Cutlets</p>
+                    <p class="item-description">Gilled Lamb served with a fresh basil pesto, honey and sesonal vegetables cooked to your liking.</p>
+                    <p class="item-price">41</p>
+                    <button id="addBig" class="item-add">Add To Order</button>
+                </div>
+                <div class="swiper-slide grid-container">
+                    <img class="menu-item-img" src="IMGS/costal-lamb-bigplate.jpg">
+                    <p class="item-heading">Grilled Costal Spring Lamb Cutlets</p>
+                    <p class="item-description">Gilled Lamb served with a fresh basil pesto, honey and sesonal vegetables cooked to your liking.</p>
+                    <p class="item-price">41</p>
+                    <button id="addBig" class="item-add">Add To Order</button>
+                </div>
+                <div class="swiper-slide grid-container">
+                    <img class="menu-item-img" src="IMGS/costal-lamb-bigplate.jpg">
+                    <p class="item-heading">Grilled Costal Spring Lamb Cutlets</p>
+                    <p class="item-description">Gilled Lamb served with a fresh basil pesto, honey and sesonal vegetables cooked to your liking.</p>
+                    <p class="item-price">41</p>
+                    <button id="addBig" class="item-add">Add To Order</button>
+                </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+        <div id="deserts" class="swiper-container">
+            <div  class="swiper-wrapper">
+                <div class="swiper-slide grid-container">
+                    <img class="menu-item-img" src="IMGS/dessert.jpeg">
+                    <p class="item-heading">Tripple Churned Ice Cream</p>
+                    <p class="item-description">House made vanila and chocolate ice cream served ontop of a fresh berry compote drizzled with creamy milk chocolate.</p>
+                    <p class="item-price">11</p>
+                    <button id="addDessert" class="item-add">Add To Order</button>
+                </div>
+                <div class="swiper-slide grid-container">
+                    <img class="menu-item-img" src="IMGS/dessert.jpeg">
+                    <p class="item-heading">Tripple Churned Ice Cream</p>
+                    <p class="item-description">House made vanila and chocolate ice cream served ontop of a fresh berry compote drizzled with creamy milk chocolate.</p>
+                    <p class="item-price">11</p>
+                    <button id="addDessert" class="item-add">Add To Order</button>
+                </div>
+                <div class="swiper-slide grid-container">
+                    <img class="menu-item-img" src="IMGS/dessert.jpeg">
+                    <p class="item-heading">Tripple Churned Ice Cream</p>
+                    <p class="item-description">House made vanila and chocolate ice cream served ontop of a fresh berry compote drizzled with creamy milk chocolate.</p>
+                    <p class="item-price">11</p>
+                    <button id="addDessert" class="item-add">Add To Order</button>
+                </div>
+                <div class="swiper-slide grid-container">
+                    <img class="menu-item-img" src="IMGS/dessert.jpeg">
+                    <p class="item-heading">Tripple Churned Ice Cream</p>
+                    <p class="item-description">House made vanila and chocolate ice cream served ontop of a fresh berry compote drizzled with creamy milk chocolate.</p>
+                    <p class="item-price">11</p>
+                    <button id="addDessert" class="item-add">Add To Order</button>
+
+                </div>
+                <div class="swiper-slide grid-container">
+                    <img class="menu-item-img" src="IMGS/dessert.jpeg">
+                    <p class="item-heading">Tripple Churned Ice Cream</p>
+                    <p class="item-description">House made vanila and chocolate ice cream served ontop of a fresh berry compote drizzled with creamy milk chocolate.</p>
+                    <p class="item-price">11</p>
+                    <button id="addDessert" class="item-add">Add To Order</button>
+                </div>
+                <div class="swiper-slide grid-container">
+                    <img class="menu-item-img" src="IMGS/dessert.jpeg">
+                    <p class="item-heading">Tripple Churned Ice Cream</p>
+                    <p class="item-description">House made vanila and chocolate ice cream served ontop of a fresh berry compote drizzled with creamy milk chocolate.</p>
+                    <p class="item-price">11</p>
+                    <button id="addDessert" class="item-add">Add To Order</button>
+                </div>
+                <div class="swiper-slide grid-container">
+                    <img class="menu-item-img" src="IMGS/dessert.jpeg">
+                    <p class="item-heading">Tripple Churned Ice Cream</p>
+                    <p class="item-description">House made vanila and chocolate ice cream served ontop of a fresh berry compote drizzled with creamy milk chocolate.</p>
+                    <p class="item-price">11</p>
+                    <button id="addDessert" class="item-add">Add To Order</button>
+                </div>
+                <div class="swiper-slide grid-container">
+                    <img class="menu-item-img" src="IMGS/dessert.jpeg">
+                    <p class="item-heading">Tripple Churned Ice Cream</p>
+                    <p class="item-description">House made vanila and chocolate ice cream served ontop of a fresh berry compote drizzled with creamy milk chocolate.</p>
+                    <p class="item-price">11</p>
+                    <button id="addDessert" class="item-add">Add To Order</button>
+                </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+        <div id="drinks" class="swiper-container">
+            <div  class="swiper-wrapper">
+                <div class="swiper-slide grid-container">
+                    <img class="menu-item-img" src="IMGS/drink.jpg">
+                    <p class="item-heading">Higher Ground Cocktail</p>
+                    <p class="item-description">The perfect cocktail creation, made with Bourbon that has a hint of pepermint, Sherry, Amaro, Cherry Liqueur, Maple Syrup and black wallnut bitters. </p>
+                    <p class="item-price">13</p>
+                    <button id="addDrink" class="item-add">Add To Order</button>
+                </div>
+                <div class="swiper-slide grid-container">
+                    <img class="menu-item-img" src="IMGS/drink.jpg">
+                    <p class="item-heading">Higher Ground Cocktail</p>
+                    <p class="item-description">The perfect cocktail creation, made with Bourbon that has a hint of pepermint, Sherry, Amaro, Cherry Liqueur, Maple Syrup and black wallnut bitters. </p>
+                    <p class="item-price">13</p>
+                    <button id="addDrink" class="item-add">Add To Order</button>
+                </div>
+                <div class="swiper-slide grid-container">
+                    <img class="menu-item-img" src="IMGS/drink.jpg">
+                    <p class="item-heading">Higher Ground Cocktail</p>
+                    <p class="item-description">The perfect cocktail creation, made with Bourbon that has a hint of pepermint, Sherry, Amaro, Cherry Liqueur, Maple Syrup and black wallnut bitters. </p>
+                    <p class="item-price">13</p>
+                    <button id="addDrink" class="item-add">Add To Order</button>
+                </div>
+                <div class="swiper-slide grid-container">
+                    <img class="menu-item-img" src="IMGS/drink.jpg">
+                    <p class="item-heading">Higher Ground Cocktail</p>
+                    <p class="item-description">The perfect cocktail creation, made with Bourbon that has a hint of pepermint, Sherry, Amaro, Cherry Liqueur, Maple Syrup and black wallnut bitters. </p>
+                    <p class="item-price">13</p>
+                    <button id="addDrink" class="item-add">Add To Order</button>
+                </div>
+                <div class="swiper-slide grid-container">
+                    <img class="menu-item-img" src="IMGS/drink.jpg">
+                    <p class="item-heading">Higher Ground Cocktail</p>
+                    <p class="item-description">The perfect cocktail creation, made with Bourbon that has a hint of pepermint, Sherry, Amaro, Cherry Liqueur, Maple Syrup and black wallnut bitters. </p>
+                    <p class="item-price">13</p>
+                    <button id="addDrink" class="item-add">Add To Order</button>
+                </div>
+                <div class="swiper-slide grid-container">
+                    <img class="menu-item-img" src="IMGS/drink.jpg">
+                    <p class="item-heading">Higher Ground Cocktail</p>
+                    <p class="item-description">The perfect cocktail creation, made with Bourbon that has a hint of pepermint, Sherry, Amaro, Cherry Liqueur, Maple Syrup and black wallnut bitters. </p>
+                    <p class="item-price">13</p>
+                    <button id="addDrink" class="item-add">Add To Order</button>
+                </div>
+                <div class="swiper-slide grid-container">
+                    <img class="menu-item-img" src="IMGS/drink.jpg">
+                    <p class="item-heading">Higher Ground Cocktail</p>
+                    <p class="item-description">The perfect cocktail creation, made with Bourbon that has a hint of pepermint, Sherry, Amaro, Cherry Liqueur, Maple Syrup and black wallnut bitters. </p>
+                    <p class="item-price">13</p>
+                    <button id="addDrink" class="item-add">Add To Order</button>
+                </div>
+                <div class="swiper-slide grid-container">
+                    <img class="menu-item-img" src="IMGS/drink.jpg">
+                    <p class="item-heading">Higher Ground Cocktail</p>
+                    <p class="item-description">The perfect cocktail creation, made with Bourbon that has a hint of pepermint, Sherry, Amaro, Cherry Liqueur, Maple Syrup and black wallnut bitters. </p>
+                    <p class="item-price">13</p>
+                    <button id="addDrink" class="item-add">Add To Order</button>
+                </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+    </section>
+    <footer id="footerNav">
+        <div class="mdc-bottom-navigation">
+            <nav class="mdc-bottom-navigation__list">
+                <span id="small" class="mdc-bottom-navigation__list-item mdc-bottom-navigation__list-item--activated mdc-ripple-surface mdc-ripple-surface--primary"
+                    data-mdc-auto-init="MDCRipple" data-mdc-ripple-is-unbounded>
+                    <span class="mdc-bottom-navigation__list-item__text">Small Plates</span>
+                </span>
+    
+                <span id="big" class="mdc-bottom-navigation__list-item mdc-ripple-surface mdc-ripple-surface--primary"
+                    data-mdc-auto-init="MDCRipple" data-mdc-ripple-is-unbounded>
+                    <span class="mdc-bottom-navigation__list-item__text">Big Plates</span>
+                </span>
+                <span id="drink" 
+                    class="mdc-bottom-navigation__list-item  mdc-ripple-surface mdc-ripple-surface--primary"
+                    data-mdc-auto-init="MDCRipple" data-mdc-ripple-is-unbounded>
+                    <span class="mdc-bottom-navigation__list-item__text">Drinks</span>
+                </span>
+                <span id="desert" class="mdc-bottom-navigation__list-item mdc-ripple-surface mdc-ripple-surface--primary"
+                    data-mdc-auto-init="MDCRipple" data-mdc-ripple-is-unbounded>
+                    <span class="mdc-bottom-navigation__list-item__text">Deserts</span>
+                </span>
+            </nav>
+        </div>
+    </footer>
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="JS/swiper-main.js"></script>
+    <script src="JS/navigation.js"></script>
+    <script src="JS/viewOrder.js"></script>
+    <script src="JS/loading.js"></script>
+</body>
+</html> 
