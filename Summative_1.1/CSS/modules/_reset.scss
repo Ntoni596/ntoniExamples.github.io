@@ -1,21 +1,21 @@
-*{
-    margin: 0;
-    padding: 0; 
-    box-sizing: border-box;
-    font-family: $mainFont, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $mainFont, sans-serif;
 }
-body{
-    background-color: $darkGreen;
-    overflow: hidden;
-    height: 100%;
+body {
+  background-color: $darkGreen;
+  overflow: hidden;
+  height: 100%;
 }
 
-#header-content{
-    background-image: url(../../IMGS/main_background.jpg), linear-gradient($darkGrey, $lightGrey);
-    background-size: contain;
+#header-content {
+  background-image: url(../../IMGS/main_background.jpg);
+  background-size: contain;
 }
 
 body {
-    font-family: 'poppins';
-    height: 100vh;
+  font-family: "poppins";
+  height: 100vh;
 }
