@@ -1,0 +1,89 @@
+@mixin footer-colour-bar {
+  height: 13px;
+  margin: auto 0;
+}
+
+#footer-dark {
+  margin-top: $top;
+  background-color: $dark-red;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "reL yelloL greeL bluL purpL logo purpR bluR greeR yelloR reR";
+  #purple {
+    @include footer-colour-bar;
+    background-color: $purple;
+    grid-area: purpL;
+  }
+  #blue {
+    @include footer-colour-bar;
+    background-color: $blue;
+    grid-area: bluL;
+  }
+  #green {
+    @include footer-colour-bar;
+    background-color: $green;
+    grid-area: greeL;
+  }
+  #yellow {
+    @include footer-colour-bar;
+    background-color: $yellow;
+    grid-area: yelloL;
+  }
+  #red {
+    @include footer-colour-bar;
+    background-color: $red;
+    grid-area: reL;
+  }
+  #purpleR {
+    @include footer-colour-bar;
+    background-color: $purple;
+    grid-area: purpR;
+  }
+  #blueR {
+    @include footer-colour-bar;
+    background-color: $blue;
+    grid-area: bluR;
+  }
+  #greenR {
+    @include footer-colour-bar;
+    background-color: $green;
+    grid-area: greeR;
+  }
+  #yellowR {
+    @include footer-colour-bar;
+    background-color: $yellow;
+    grid-area: yelloR;
+  }
+  #redR {
+    @include footer-colour-bar;
+    background-color: $red;
+    grid-area: reR;
+  }
+  #footer-logo {
+    grid-area: logo;
+    margin: $top $side;
+  }
+}
+
+#links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: $red;
+}
+
+.link-heading {
+  font-weight: $bold;
+  text-align: center;
+  color: white;
+  margin: $top 0;
+  font-size: 2.6vw;
+  display: block;
+}
+
+.link {
+  text-align: center;
+  color: white;
+  margin: $top 0;
+  font-size: 2.2vw;
+  display: block;
+}

@@ -1,0 +1,51 @@
+.swiper-container {
+  width: 100%;
+  padding-top: $top;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+  justify-content: center;
+  text-align: center;
+}
+
+.product-img {
+  height: 60%;
+}
+
+.product-title {
+  padding-top: $top;
+  padding-bottom: 0px;
+  font-size: $bodyTextMobile;
+  font-weight: $bold;
+}
+
+.product-price {
+  font-size: $bodyTextMobile;
+  margin-bottom: 0px;
+}
+
+.product-button {
+  @include button;
+  width: 100%;
+  background-color: $red;
+  color: white;
+  font-size: $bodyTextMobile;
+  margin-top: 10px;
+}
+
+.swiper-pagination-bullet {
+  margin-top: $top;
+  background-color: white;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: $red;
+  font-weight: $bold;
+  --swiper-navigation-sides-offset: 40px;
+}

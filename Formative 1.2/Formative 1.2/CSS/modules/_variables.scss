@@ -1,0 +1,59 @@
+$red: #d92b04;
+$blue: #0487d9;
+$yellow: #f29f05;
+$green: #038b73;
+$purple: #7e61be;
+$dark-red: #9c2105;
+$grey: rgb(200, 200, 200);
+
+$top: 20px;
+$bottom: 10px;
+$side: 25px;
+
+$shadow: 0px 15px 20px -20px #000;
+
+@mixin paddingNav {
+  padding: 15px;
+}
+
+@mixin marginNav {
+  margin: 15px;
+}
+.fixedPosition {
+  position: fixed;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-box {
+  display: block;
+  background-color: $purple;
+  justify-content: center;
+  align-items: center;
+  margin: $top $side $bottom $side;
+  padding-bottom: 25px;
+  border-radius: 30px;
+  overflow: hidden;
+
+  @media only screen and (min-width: 992px) {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: $top;
+  }
+}
+
+.item {
+  border-radius: 30px;
+}
+
+@mixin button {
+  border-style: none;
+  border-radius: 50px;
+  font-style: normal;
+  box-shadow: 0px 15px 20px -20px #000;
+  padding: 13px;
+  text-transform: uppercase;
+}

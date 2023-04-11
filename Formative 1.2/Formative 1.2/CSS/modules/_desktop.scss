@@ -1,0 +1,104 @@
+@media only screen and (min-width: 992px) {
+  #hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    grid-template-areas: "txt txt img";
+    width: 80%;
+    margin: 0 auto;
+    margin-top: $top;
+    padding: 100px 0;
+  }
+  #hero-text {
+    grid-area: txt;
+    text-align: left;
+    padding: 70px;
+  }
+
+  #hero {
+    grid-area: img;
+    margin-top: 20px;
+    width: 80%;
+    padding-left: 10%;
+  }
+
+  #hero-header {
+    font-size: $mediumHeader;
+    font-weight: $bold;
+    margin-left: $side;
+  }
+
+  #hero-body {
+    font-size: $smallHeader;
+    font-weight: $bold;
+    padding-top: 10px;
+    padding-bottom: $bottom;
+    padding-left: $side;
+  }
+
+  #hero-cta {
+    @include button;
+    font-size: $bodyText;
+    font-weight: $bold;
+    background-color: white;
+    color: black;
+    width: 50%;
+    margin-left: $side;
+  }
+
+  .newProductsHeading {
+    font-size: $mediumHeader;
+  }
+
+  #product-grid,
+  #center-grid {
+    .item {
+      text-align: center;
+      padding: 0;
+      gap: 20px;
+
+      img {
+        width: 70%;
+        border-radius: 30px;
+        margin-top: $top;
+        margin-bottom: $bottom;
+        box-shadow: $shadow;
+      }
+      h3 {
+        font-size: 1.7vw;
+        font-weight: $bold;
+        color: white;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  #product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 0.8fr);
+  }
+
+  .center-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #category-button {
+    @include button;
+    margin: 0 auto;
+    margin-top: $top;
+    font-size: $mediumHeaderMobile;
+    font-weight: $bold;
+    background-color: white;
+    color: black;
+    width: 40%;
+  }
+
+  .link-heading {
+    font-size: 1vw;
+  }
+
+  .link {
+    font-size: 0.7vw;
+  }
+}
