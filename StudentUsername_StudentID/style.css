@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* This is your CSS file. You will use this file to style your HTML pages */
+
+/* Body CSS Start */
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    margin: 0;
+}
+/* Body CSS End */
+
+/* Classes used through out html */
+.center {
+    margin: auto;
+    width: 75%;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* Navbar CSS Start */
+#mainNav {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    
+
+    z-index: 1;
+    left: -40px;
+    margin-top: 0px;
+    padding-right: 80px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    list-style: none;
+
+        backdrop-filter: blur(0px);
+        -webkit-backdrop-filter: blur(0px);
+    
+    margin-right: 20px;
+
+        -webkit-transition: all 0.15s ease-in-out;
+        -moz-transition: all 0.15s ease-in-out;
+        -o-transition: all 0.15s ease-in-out;
+        transition: all 0.15s ease-in-out;
+
+    /*Welcome to Dropped text animation (fade in) */
+
+    -webkit-animation: fadein 2.5s;
+    -webkit-animation-fill-mode: forwards;
+
+    animation: fadein 2.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein{
+0%      { opacity: 0; }
+20%     { opactiy: 0; }
+40%     { opacity: 0; }
+60%     { opactiy: 0; }
+80%     { opacity: 0; }
+100%    { opactiy: 1; }
+}
+
+.navbar_links {
+    display: flex;
+    margin-right: 0px;
+}
+
+#mainNav a {
+    display: block;
+    font-size: 1.4em;
+    color: #ffffff;
+    font-weight: 300;
+    text-decoration: none;
+
+    -webkit-transition: color 0.2s linear;
+    -moz-transition: color 0.2s linear;
+    -o-transition: color 0.2s linear;
+    transition: color 0.2s linear;
+}
+
+.nav_links {
+    margin-left: 15px;
+    margin-right: 15px;
+    display: block;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#nav_logo {
+    height: 50px;
+    width: 270px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 50px;
+
+    align-self: center;
+
+    margin-right: auto;
+    background-image: url(DroppedLogo.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+
+    /*Animation for changing logo during scroll in conjunction with JS */
+
+    -webkit-transition: background-image 0.4s linear;
+    -moz-transition: background-image 0.4s linear;
+    -o-transition: background-image 0.4s linear;
+    transition: background-image 0.4s linear;
+
+    /*Animation for enlarging and shrinking logo during */
+
+    -webkit-transition: all 0.6s cubic-bezier(0,.01,0,1.76);
+    transition: all 0.6s cubic-bezier(0,.01,0,1.76);
+}
+
+#nav_logo a {
+    width: 100%;
+    height: 100%;
+}
+
+.nav_links {
+    display: block;
+    line-height: 61px;
+    height: 61px;
+    overflow: hidden;
+
+    padding-top: 0px; 
+    padding-bottom: 0px;
+}
+
+.nav-text {
+    display: block;
+    margin-top: 0em;
+
+        -webkit-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+}
+
+.nav-image {
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 40px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+#mainNav a:hover {color:#fff}
+
+.nav_links:hover .nav-text {
+    margin-top: -50px; 
+
+    -webkit-transition: all 0.25s cubic-bezier(.67,.24,.59,1.72);
+    transition: all 0.25s cubic-bezier(.67,.24,.59,1.72);
+}
+
+#nav-product-icon {
+    background-image: url(shopping-cart-20392.png)
+}
+#nav-question-icon {
+    background-image: url(pngfind.com-question-mark-emoji-png-2463018.png)
+}
+#nav-pay-icon {
+    background-image: url(clipart3538118.png)
+}
+
+.noScroll{
+    background: rgba(0,0,0,0.00);
+}
+
+.onScrollDown{
+    background: rgba(0,0,0,0.4);
+}
+/*Navbar CSS End */
+
+/* Index.HTML CSS Begin */
+
+#homepage_banner_filter {
+	
+	width: 100%;
+	height: 620px;
+	overflow: hidden;
+	
+	/* background: rgba(0,0,0,0.3);  /*USE ONLY background IF NOT USING BLUR. DELETE REST 
+	-webkit-backdrop-filter: blur(5px) !important;
+	backdrop-filter: blur(5px); */
+	
+	/* Animation and delay for welcome screen image */
+	animation: welcome-blurin 2.3s;
+	-webkit-animation: welcome-blurin 2.3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-delay: 0.8s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes welcome-blurin {
+    from{   
+        -webkit-backdrop-filter: blur(0);
+        backdrop-filter: blur(0);
+		background: rgba(0,0,0,0.0);
+		
+    }
+    to{
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background: rgba(0,0,0,0.28);
+		/* Default background color (darken image on blur)---- background: rgba(0,0,0,0.28); -----*/
+    }
+}
+
+#homepage_banner {
+	max-width: auto;
+	display: flex;
+	height: 620px;
+	color: #ffffff;
+	
+	background-image: url(Hopetoun_falls.jpg);
+	background-size: cover; /*Scales image to fill entire element*/
+	background-repeat: no-repeat;
+	background-position: center center;
+	/* Normal background position---- background-position: center top; -----*/
+	
+	background-color: white;
+}
+
+#welcomebox {
+	
+	max-width: 900px;
+	height: 350px;
+	margin: auto;
+	padding-top: 160px;
+	padding-right: 50px;
+	padding-left: 50px;
+	
+	/*Welcome to iStore Text effects, shadows etc */
+	
+	text-shadow: 1px 1px 6px rgba(0,0,0,0.15);
+	
+	/*Welcome to iStore text animations (fade in)*/
+	animation: fadein 2s;
+	-webkit-animation: fadein 2s;
+    -webkit-animation-fill-mode: forwards;
+  
+	animation-fill-mode: forwards;
+	
+}
+
+#welcomebox_dropped {
+	line-height: 10px;
+    text-align: center;
+}
+
+#welcomebox_dropped h1 {
+	font-size: 5.1em;
+	font-weight: 600;
+}
+
+#welcomebox_dropped h2 {
+	font-size: 1.8em;
+	font-weight: 500;
+}
+
+#welcomebox_nzowned{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    align-content: flex-start;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+#NZMap {
+    background-image: url(463-4633158_new-zealand-map-png-transparent-png.png);
+}
+
+.icon{
+    height: 120px;
+    width: 120px;
+    margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+.SectionTwo {
+    display: flex;
+    padding: 2.5%;
+
+}
+
+.flex-child {
+    flex: 50%;
+    border: 2px solid black;
+    padding-bottom: 50px;
+}
+
+.story{
+    width: 2%;
+}
+
+h2 {
+    font-size: 2.8em;
+}
+
+p1 {
+    font-size: 1.4em;
+}
